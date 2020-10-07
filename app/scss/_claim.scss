@@ -275,7 +275,6 @@
             height: 37px;
         }
     }
-
             //checked
 
         &__check-input:checked + &__check-input-castom {
@@ -289,7 +288,6 @@
                 0 0 0 0.1em $LIGHT-GRAY-E7,
                 0 0 0 0.2em $LIGHT-GRAY-8C;
         }
-
             //disabled
         
         &__check-input:disabled + &__check-input-castom {
@@ -302,6 +300,7 @@
             background-position: center 45%;
             fill: $LIGHT-GRAY-8C;
         }
+
 
     //общие чекбоксы
 
@@ -364,11 +363,17 @@
         &__common-checkbox:disabled + &__common-checkbox-castom {
             box-shadow: 0 0 0 0.2em $LIGHT-GRAY-8C;
             background-color: $LIGHT-GRAY-E7;
+
+            pointer-events: none !important;
+            cursor: default !important;
         }
         
         &__common-checkbox:checked:disabled + &__common-checkbox-castom {
             background-image: url("data:image/svg+xml,%3Csvg width='11' height='7' viewBox='0 0 11 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.19048L5.39024 5L10 1' stroke='%238C8C8C' stroke-width='2'/%3E%3C/svg%3E");
             background-position: center 45%;
+
+            pointer-events: none !important;
+            cursor: default !important;
         }
 
     &__common-label {
