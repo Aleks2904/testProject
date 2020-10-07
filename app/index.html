@@ -210,11 +210,11 @@
                 <div class="AT-slider__container">
                     <div id="js-approaching-track" class="AT-slider__track"></div>
                 </div>
-                <button id="js-approaching-btn-prev" class="AT-slider__btn-prev AT-slider__btn"></button>
+                <button id="js-approaching-btn-prev" class="AT-slider__btn-prev AT-slider__btn" aria-label="прерыдущий слайд"></button>
 
-                <button id="js-approaching-btn-next" class="AT-slider__btn-next AT-slider__btn"></button>
+                <button id="js-approaching-btn-next" class="AT-slider__btn-next AT-slider__btn" aria-label="следующий слайд"></button>
 
-                <button id="js-approaching-btn-add" class="AT-slider__btn-add">
+                <button id="js-approaching-btn-add" class="AT-slider__btn-add" aria-label="добавить еще слайд">
                     загрузить еще
                 </button>
             </div>
@@ -230,9 +230,9 @@
                     <div id="js-popular-slider-track" class="popular-slider__track"></div>
                 </div>
                 
-                <button id="js-popular-slider-btn-prev" class="popular-slider__btn-prev popular-slider__btn"></button>
+                <button id="js-popular-slider-btn-prev" class="popular-slider__btn-prev popular-slider__btn" aria-label="прерыдущий слайд"></button>
 
-                <button id="js-popular-slider-btn-next" class="popular-slider__btn-next popular-slider__btn"></button>
+                <button id="js-popular-slider-btn-next" class="popular-slider__btn-next popular-slider__btn" aria-label="следующий слайд"></button>
             </div>
         </section>
 
@@ -267,7 +267,7 @@
                             телефон
                         </label>
                         
-                        <input id="phone" type="tel" class="claim__input" placeholder="+7___ ___ __ __">
+                        <input name="tel" id="phone" type="tel" class="claim__input" placeholder="+7___ ___ __ __">
                     </li>
 
                     <li class="claim__item">
@@ -282,7 +282,7 @@
                             </span>
                         </label>
     
-                        <input id="country" type="text" class="claim__input" placeholder="Континент, страна или город" required>
+                        <input name="anywhere" id="country" type="text" class="claim__input" placeholder="Континент, страна или город" required>
     
                         <label for="country" class="claim__label-error">
                             Укажите континент, страну или город
@@ -294,7 +294,7 @@
                             Когда?
                         </label>
                         
-                        <input id="date" type="text" class="claim__input" placeholder="Даты или временной  интервал">
+                        <input name="date" id="date" type="text" class="claim__input" placeholder="Даты или временной  интервал">
                     </li>
                 </ul>
 
@@ -310,7 +310,7 @@
                                     VIBER
                                 </label>
 
-                                <input id="VIBER" type="checkbox" class="claim__check-input">
+                                <input id="VIBER" type="checkbox" class="claim__check-input" value="viber">
 
                                 <span class="claim__check-input-castom"></span>
                             </li>
@@ -320,7 +320,7 @@
                                     WHATSAPP
                                 </label>
 
-                                <input id="WHATSAPP" type="checkbox" class="claim__check-input" checked>
+                                <input id="WHATSAPP" type="checkbox" class="claim__check-input" value="whatsapp" checked>
 
                                 <span class="claim__check-input-castom"></span>
                             </li>
@@ -330,7 +330,7 @@
                                     ПОЧТА
                                 </label>
 
-                                <input id="MAIL" type="checkbox" class="claim__check-input" checked disabled>
+                                <input id="MAIL" type="checkbox" class="claim__check-input" value="mail" checked disabled>
 
                                 <span class="claim__check-input-castom"></span>
                             </li>
@@ -340,7 +340,7 @@
                                     ТЕЛЕФОН
                                 </label>
 
-                                <input id="PHONE" type="checkbox" class="claim__check-input" disabled>
+                                <input id="PHONE" type="checkbox" class="claim__check-input" value="phone" disabled>
 
                                 <span class="claim__check-input-castom"></span>
                             </li>
@@ -358,7 +358,7 @@
                                     ИНТЕРНЕТ
                                 </label>
 
-                                <input id="INTERNET" type="checkbox" class="claim__check-input">
+                                <input id="INTERNET" type="checkbox" class="claim__check-input" value="интернет">
 
                                 <span class="claim__check-input-castom"></span>
                             </li>
@@ -368,7 +368,7 @@
                                     РЕКОМЕНДОВАЛИ ДРУЗЬЯ
                                 </label>
 
-                                <input id="FRENDS" type="checkbox" class="claim__check-input">
+                                <input id="FRENDS" type="checkbox" class="claim__check-input" value="друзья">
 
                                 <span class="claim__check-input-castom"></span>
                             </li>
@@ -378,7 +378,7 @@
                                     СОЦ.СЕТИ
                                 </label>
 
-                                <input id="SOCIAL-NETWORK" type="checkbox" class="claim__check-input">
+                                <input id="SOCIAL-NETWORK" type="checkbox" class="claim__check-input" value="соц сети">
 
                                 <span class="claim__check-input-castom"></span>
                             </li>
@@ -388,7 +388,7 @@
                                     УЖЕ&nbsp;ЕЗДИЛ
                                 </label>
 
-                                <input id="ALREADY-WENT" type="checkbox" class="claim__check-input">
+                                <input id="ALREADY-WENT" type="checkbox" class="claim__check-input" value="уже был">
 
                                 <span class="claim__check-input-castom"></span>
                             </li>
@@ -398,7 +398,7 @@
                 
                 <ul class="claim__list-common-check">
                     <li class="claim__item-common-check">
-                        <input id="mailings" type="checkbox" class="claim__common-checkbox" checked> 
+                        <input id="mailings" type="checkbox" class="claim__common-checkbox" checked value="spam to mail"> 
 
                         <span class="claim__common-checkbox-castom"></span>
 
@@ -412,7 +412,7 @@
                     </li>
 
                     <li class="claim__item-common-check">
-                        <input name="consentCheck" id="data-processing" type="checkbox" class="claim__common-checkbox" required> 
+                        <input name="consentCheck" id="data-processing" type="checkbox" class="claim__common-checkbox" value="agreement" required> 
 
                         <span name="consentCheck" class="claim__common-checkbox-castom"></span>
 
