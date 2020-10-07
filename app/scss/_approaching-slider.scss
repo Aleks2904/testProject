@@ -1,6 +1,7 @@
 .btnDisable{
     cursor: default;
     opacity: 0;
+    pointer-events: none;
 }
 
 .btnDisableAdd{
