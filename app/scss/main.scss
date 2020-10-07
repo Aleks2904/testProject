@@ -1,0 +1,20 @@
+    //svg
+@import "_sass-inline-svg";
+    //common-styles
+@import "_body.scss";
+@import "_common-styles.scss";
+    //header
+@import "_header.scss";
+@import "_menu-block.scss";
+    //общие стили для тела
+@import "_all-section.scss";
+    // section approaching
+@import "_section-approaching-tours.scss";
+@import "_approaching-slider.scss";
+    //section popular
+@import "_section-popular.scss";
+    // section claim
+@import "_claim.scss";
+@import "_modal-consent.scss";
+    //footer
+@import "_footer.scss";

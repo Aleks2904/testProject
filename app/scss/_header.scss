@@ -1,0 +1,57 @@
+.header {
+    background: $YELLOW-FF;
+
+    @media (min-width:768px){
+        padding: 22px 17px 24px;
+        margin-bottom: 46px;
+    }
+
+    @media (max-width:767px){
+        padding: 22px 11px 24px;
+        margin-bottom: 37px;
+    }
+
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+
+
+    &__btn {
+        background: transparent;
+        outline: none;
+        border:none;
+
+        cursor: pointer;
+    }
+
+    &__btn:hover > &__btn-burger {
+        background: #B22222;
+
+        transition: background 0.2s;
+    }
+
+    &__btn:focus > &__btn-burger {
+        background: #B22222;
+
+        transition: background 0.2s;
+    }
+
+    &__btn-burger {
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: black;
+
+        pointer-events: none;
+
+        transition: background 0.2s;
+    }
+
+    &__btn-burger:nth-child(2){
+        height: 4px;
+    }
+
+    &__btn-burger:not(:last-child){
+        margin-bottom: 4px;
+    }
+}

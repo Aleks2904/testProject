@@ -1,0 +1,62 @@
+//dessctop
+
+$WHITE: #FFFFFF;
+$LIGHT-GRAY-E7: #E7E7E7;
+$LIGHT-GRAY-CD: #CDCDCD;
+$LIGHT-GRAY-8C: #8C8C8C;
+$LIGHT-GRAY-C1: #C1C1C1;
+$LIGHT-GRAY-C4: #C4C4C4;
+$GRAY: #272727;
+$RED-CB: #CB0037;
+$RED-AE: #AE1010;
+$YELLOW-C5: #C5B223;
+$YELLOW-FF: #FFD241;
+$BLACK: #000000;
+
+
+//menu
+
+$BLACK-14: #141414;
+
+//+++++++++++++++++
+
+.container {
+    width: 1024px;
+    margin:0 auto;
+}
+
+//заголовки
+
+%title-section{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.5px;
+
+    display: inline-block;
+}
+
+//валди классы для ошибки
+
+.error{
+    border: 3px solid  $RED-CB !important;
+}
+
+.error + .claim__label-error {
+    opacity: 1 !important;
+}
+.error + .claim__common-checkbox-castom {
+    box-shadow: 0 0 0 0.2em $RED-CB;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+
+
+

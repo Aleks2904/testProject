@@ -1,0 +1,202 @@
+.popular-tours {
+    @media (min-width:768px){
+        margin-bottom: 83px;
+    }
+
+    &__title {
+        position: relative;
+        transform: translateX(-50%);
+
+        @media (min-width:768px){
+            left: 51.3%;
+            margin-bottom: 48px;
+        }
+
+        @media (max-width:768px){
+            text-align: center;
+            left: 47%;
+            margin-bottom: 27px;
+        }
+
+        @extend %title-section;
+    }
+}
+
+.popular-slider {
+    position: relative;
+    margin: 0 auto;
+
+    @media (max-width:768px){
+        border-bottom: 2px solid $LIGHT-GRAY-C4;
+
+        padding-bottom: 6px;
+        margin-bottom: 36px;
+    }
+
+    &__container {
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    &__track {
+        display: grid;
+        transition: 0.3s;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+
+        outline: none;
+        border: none;
+        background: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        cursor: pointer;
+
+        width: 20px;
+        height: 25px;
+    }
+
+    &__btn-prev {
+        @media (min-width:768px){
+            left: -25px;
+        }
+        @media (max-width:768px){
+            left: 10px
+        }
+    
+        background-image: inline-svg("arrow-slider", $BLACK );
+        transform: rotate(180deg);
+
+        &:hover{
+            transform: translateY(-50%), rotate(180deg);
+            background-image: inline-svg("arrow-slider", $YELLOW-FF);
+
+            transition: transform 0.3s, background-image 0.3s;
+        }
+
+        &:focus{
+            transform: translateY(-50%), rotate(180deg);
+            background-image: inline-svg("arrow-slider", $YELLOW-FF);
+
+            transition: transform 0.3s, background-image 0.3s;
+        }
+    }
+
+    &__btn-next {
+        @media (min-width:768px){
+            right: -25px;
+        }
+        @media (max-width:768px){
+            right: 10px
+        }
+    
+        background-image: inline-svg("arrow-slider", $BLACK );
+
+        &:hover{
+            transform: translateY(-50%);
+            background-image: inline-svg("arrow-slider", $YELLOW-FF);
+
+            transition: transform 0.3s, background-image 0.3s;
+        }
+
+        &:focus{
+            transform: translateY(-50%);
+            background-image: inline-svg("arrow-slider", $YELLOW-FF);
+
+            transition: transform 0.3s, background-image 0.3s;
+        }
+    }
+
+    &__item{
+        position: relative;
+
+        max-width: 380px;
+        max-height: 371px;
+        margin: 0;
+
+        @media (min-width:920px){
+            width: 40vw;
+            height: 33vh;
+        }
+
+        @media (min-width:768px) and (max-width:920px){
+            width: 35vw;
+            height: 33vh;
+        }
+
+        @media (max-width:768px){
+            width: 90vw;
+            height: 30vh;
+            max-height: 270px;
+        }
+    }
+
+    &__img-block {
+        max-height: 180px;
+        position: relative;
+
+        @media (min-width:768px){
+            margin-bottom: 10px;
+        }
+
+        @media (max-width:768px){
+            margin-bottom: 7px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @media (min-width:768px){
+            max-height: 180px;
+        }
+
+        @media (max-width:768px){
+            max-height: 180px;
+        }
+    }
+
+    &__price {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+
+        display: block;
+        padding: 14px 26px;
+        background: $YELLOW-FF;
+    }
+
+    &__country {
+        font-size: 9px;
+        line-height: 11px;
+        color: $YELLOW-C5;
+
+        display: inline-block;
+
+        @media (min-width:768px){
+            margin-bottom: 7px;
+        }
+
+        @media (max-width:768px){
+            margin-bottom: 5px;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+
+        margin-bottom: 20px;
+    }
+}

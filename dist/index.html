@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/all.css">
+
+    <title>туры</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="visually-hidden">
+            заказать туры по всему миру
+        </h1>
+
+        <button id="js-open-menu" class="header__btn" aria-label="open menu">
+            <span class="header__btn-burger"></span>
+            <span class="header__btn-burger"></span>
+            <span class="header__btn-burger"></span>
+        </button>
+
+        <div id="js-menu-block" class="menu-block">
+            <button id="js-close-menu" class="menu-block__btn-close" aria-label="close">
+                <span class="menu-block__btn-close_elem"></span>
+                <span class="menu-block__btn-close_elem"></span>
+            </button>
+
+            <form action="#" class="menu-block__form">
+                <select name="country" id="js-select-country" class="menu-block__select menu-block__select-country">
+                    <option class="menu-block__option menu-block__option_first" value="Cтраны">
+                        Cтраны
+                    </option>
+
+                    <optgroup label="Северная Америка" class="menu-block__optgroup">
+                        <option class="menu-block__option" value="Аргентина">
+                            Аргентина
+                        </option>
+
+                        <option class="menu-block__option" value="Бразилия">
+                            Бразилия
+                        </option>
+
+                        <option class="menu-block__option" value="Перу">
+                            Перу
+                        </option>
+
+                        <option class="menu-block__option" value="Уругвай">
+                            Уругвай
+                        </option>
+
+                        <option class="menu-block__option" value="Чили">
+                            Чили
+                        </option>
+
+                        <option class="menu-block__option" value="Эквадор">
+                            Эквадор
+                        </option>
+
+                        <option class="menu-block__option" value="Все туры на континенте">
+                            Все туры на континенте
+                        </option>
+                    </optgroup>
+
+                    <optgroup label="Акртика и Антарктида" class="menu-block__optgroup">
+                    </optgroup>
+
+                    <optgroup label="Африка" class="menu-block__optgroup">
+                    </optgroup>
+
+                    <optgroup label="Австралия и Океания" class="menu-block__optgroup">
+                    </optgroup>
+
+                    <optgroup label="Европа" class="menu-block__optgroup">
+                    </optgroup>
+
+                    <optgroup label="Россия" class="menu-block__optgroup">
+                    </optgroup>
+
+                    <optgroup label="Азия" class="menu-block__optgroup">
+                    </optgroup>
+                </select>
+
+                <select name="date" id="js-select-date" class="menu-block__select menu-block__select-date">
+                    <option class="menu-block__option menu-block__option_first">
+                        Даты
+                    </option>
+
+                    <optgroup label="country-1" class="menu-block__optgroup">
+                        <option class="menu-block__option" value="date-1">
+                            date-1
+                        </option>
+
+                        <option class="menu-block__option" value="date-2">
+                            date-2
+                        </option>
+
+                        <option class="menu-block__option" value="date-3">
+                            date-3
+                        </option>
+                    </optgroup>
+                </select>
+
+                <select name="type-travel" id="js-select-type" class="menu-block__select menu-block__select-type">
+                    <option class="menu-block__option menu-block__option_first">
+                        Тип путешествия
+                    </option>
+
+                    <optgroup label="country-1" class="menu-block__optgroup">
+                        <option class="menu-block__option" value="type-1">
+                            type-1
+                        </option>
+
+                        <option class="menu-block__option" value="type-2">
+                            type-2
+                        </option>
+
+                        <option class="menu-block__option" value="type-3">
+                            type-3
+                        </option>
+                    </optgroup>
+                </select>
+
+                <button type="submit" class="menu-block__btn-form">
+                    найти
+                </button>
+            </form>
+
+            <nav class="menu-block__nav">
+                <ul class="menu-block__nav-list">
+                    <li class="menu-block__nav-item">
+                        <a href="#" class="menu-block__nav-link">
+                            ПУТЕШЕСТВИЯ
+                        </a>
+                    </li>
+
+                    <li class="menu-block__nav-item">
+                        <a href="#" class="menu-block__nav-link">
+                            О НАС
+                        </a>
+                    </li>
+
+                    <li class="menu-block__nav-item">
+                        <a href="#" class="menu-block__nav-link">
+                            ОТЗЫВЫ
+                        </a>
+                    </li>
+
+                    <li class="menu-block__nav-item">
+                        <a href="#" class="menu-block__nav-link">
+                            БЛОГ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="menu-block__footer-block">
+                <a href="tel:88001234567" class="menu-block__footer-link">
+                    8 (800) 123-45-67
+                </a>
+
+                <button type="button" class="menu-block__footer-btn">
+                    ПОДБЕРИТЕ МНЕ ТУР
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="approaching-tours">
+            <h2 class="approaching-tours__title">
+                ГОРЯЩИЕ ТУРЫ
+            </h2>
+
+            <ul id="js-list-btn" class="approaching-tours__btn-list">
+                <li class="approaching-tours__btn-item">
+                    <button type="button" class="approaching-tours__btn approaching-tours__first-btn">
+                        <span class="approaching-tours__btn-text approaching-tours__first-btn-text">
+                            Испания
+                        </span>
+                    </button>
+                </li>
+
+                <li class="approaching-tours__btn-item">
+                    <button type="button" class="approaching-tours__btn">
+                        <span class="approaching-tours__btn-text">
+                            Италия
+                        </span>
+                    </button>
+                </li>
+
+                <li class="approaching-tours__btn-item">
+                    <button type="button" class="approaching-tours__btn">
+                        <span class="approaching-tours__btn-text">
+                            Исландия
+                        </span>
+                    </button>
+                </li>
+
+                <li class="approaching-tours__btn-item">
+                    <button type="button" class="approaching-tours__btn">
+                        <span class="approaching-tours__btn-text">
+                            Турция
+                        </span>
+                    </button>
+                </li>
+            </ul>
+
+            <div id="js-approaching-slider" class="AT-slider">
+                <div class="AT-slider__container">
+                    <div id="js-approaching-track" class="AT-slider__track"></div>
+                </div>
+                <button id="js-approaching-btn-prev" class="AT-slider__btn-prev AT-slider__btn"></button>
+
+                <button id="js-approaching-btn-next" class="AT-slider__btn-next AT-slider__btn"></button>
+
+                <button id="js-approaching-btn-add" class="AT-slider__btn-add">
+                    загрузить еще
+                </button>
+            </div>
+        </section>
+
+        <section class="popular-tours">
+            <h2 class="popular-tours__title">
+                ПОПУЛЯРНЫЕ ТУРЫ
+            </h2>
+
+            <div id="js-popular-slider" class="popular-slider">
+                <div class="popular-slider__container">
+                    <div id="js-popular-slider-track" class="popular-slider__track"></div>
+                </div>
+                
+                <button id="js-popular-slider-btn-prev" class="popular-slider__btn-prev popular-slider__btn"></button>
+
+                <button id="js-popular-slider-btn-next" class="popular-slider__btn-next popular-slider__btn"></button>
+            </div>
+        </section>
+
+        <section class="claim">
+            <h2 class="claim__title">
+                Заявка на подбор путешествия
+            </h2>
+
+            <form id="js-claim-form" class="claim__form" action="#">
+                <ul class="claim__list">
+                    <li class="claim__item">
+                        <h3 class="claim__discription">
+                            немного о вас
+                        </h3>
+                        
+                        <label for="name" class="claim__label">
+                            имя 
+                            <span class="claim__label_spec">
+                                *
+                            </span>
+                        </label>
+    
+                        <input name="name" id="name" type="text" class="claim__input">
+    
+                        <label for="name" class="claim__label-error">
+                            Введите имя
+                        </label>
+                    </li>
+
+                    <li class="claim__item">
+                        <label for="phone" class="claim__label">
+                            телефон
+                        </label>
+                        
+                        <input id="phone" type="tel" class="claim__input" placeholder="+7___ ___ __ __">
+                    </li>
+
+                    <li class="claim__item">
+                        <h3 class="claim__discription">
+                            о путешествии
+                        </h3>
+
+                        <label for="country" class="claim__label">
+                            куда и когда хотите поехать 
+                            <span class="claim__label_spec">
+                                *
+                            </span>
+                        </label>
+    
+                        <input id="country" type="text" class="claim__input" placeholder="Континент, страна или город" required>
+    
+                        <label for="country" class="claim__label-error">
+                            Укажите континент, страну или город
+                        </label>
+                    </li>
+    
+                    <li class="claim__item">
+                        <label for="date" class="claim__label">
+                            Когда?
+                        </label>
+                        
+                        <input id="date" type="text" class="claim__input" placeholder="Даты или временной  интервал">
+                    </li>
+                </ul>
+
+                <ul class="claim__check-main-list">
+                    <li class="claim__check-main-item clearfix">
+                        <h3 class="claim__discription">
+                            удобный способ связи
+                        </h3>
+    
+                        <ul class="claim__check-list clearfix">
+                            <li class="claim__check-item">
+                                <label for="VIBER" class="claim__check-label">
+                                    VIBER
+                                </label>
+
+                                <input id="VIBER" type="checkbox" class="claim__check-input">
+
+                                <span class="claim__check-input-castom"></span>
+                            </li>
+        
+                            <li class="claim__check-item">
+                                <label for="WHATSAPP" class="claim__check-label">
+                                    WHATSAPP
+                                </label>
+
+                                <input id="WHATSAPP" type="checkbox" class="claim__check-input" checked>
+
+                                <span class="claim__check-input-castom"></span>
+                            </li>
+        
+                            <li class="claim__check-item">
+                                <label for="MAIL" class="claim__check-label">
+                                    ПОЧТА
+                                </label>
+
+                                <input id="MAIL" type="checkbox" class="claim__check-input" checked disabled>
+
+                                <span class="claim__check-input-castom"></span>
+                            </li>
+        
+                            <li class="claim__check-item">
+                                <label for="PHONE" class="claim__check-label">
+                                    ТЕЛЕФОН
+                                </label>
+
+                                <input id="PHONE" type="checkbox" class="claim__check-input" disabled>
+
+                                <span class="claim__check-input-castom"></span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="claim__check-main-item clearfix">
+                        <h3 class="claim__discription">
+                            ОТКУДА УЗНАЛИ О НАС
+                        </h3>
+    
+                        <ul class="claim__check-list clearfix">
+                            <li class="claim__check-item">
+                                <label for="INTERNET" class="claim__check-label">
+                                    ИНТЕРНЕТ
+                                </label>
+
+                                <input id="INTERNET" type="checkbox" class="claim__check-input">
+
+                                <span class="claim__check-input-castom"></span>
+                            </li>
+        
+                            <li class="claim__check-item">
+                                <label for="FRENDS" class="claim__check-label">
+                                    РЕКОМЕНДОВАЛИ ДРУЗЬЯ
+                                </label>
+
+                                <input id="FRENDS" type="checkbox" class="claim__check-input">
+
+                                <span class="claim__check-input-castom"></span>
+                            </li>
+        
+                            <li class="claim__check-item">
+                                <label for="SOCIAL-NETWORK" class="claim__check-label">
+                                    СОЦ.СЕТИ
+                                </label>
+
+                                <input id="SOCIAL-NETWORK" type="checkbox" class="claim__check-input">
+
+                                <span class="claim__check-input-castom"></span>
+                            </li>
+        
+                            <li class="claim__check-item">
+                                <label for="ALREADY-WENT" class="claim__check-label">
+                                    УЖЕ&nbsp;ЕЗДИЛ
+                                </label>
+
+                                <input id="ALREADY-WENT" type="checkbox" class="claim__check-input">
+
+                                <span class="claim__check-input-castom"></span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="claim__list-common-check">
+                    <li class="claim__item-common-check">
+                        <input id="mailings" type="checkbox" class="claim__common-checkbox" checked> 
+
+                        <span class="claim__common-checkbox-castom"></span>
+
+                        <label for="mailings" class="claim__common-label">
+                            Получать свежие предложения по электронной почте
+                            
+                            <p class="claim__common-discription">
+                                Каждую неделю мы&nbsp;делаем для вас обзор лучших экспедиций, статей и&nbsp;лайфхаков для путешественников. Если вдруг вам не&nbsp;понравится, вы&nbsp;сможете отписаться в&nbsp;любой момент.
+                            </p>
+                        </label>
+                    </li>
+
+                    <li class="claim__item-common-check">
+                        <input name="consentCheck" id="data-processing" type="checkbox" class="claim__common-checkbox" required> 
+
+                        <span name="consentCheck" class="claim__common-checkbox-castom"></span>
+
+                        <label id="js-consent" for="data-processing" class="claim__common-label">
+                            С обработкой своих персональных данных согласен.
+
+                            <span class="claim__label_spec">
+                                *
+                            </span>
+                            
+                            <p class="claim__common-discription">
+                                Отправляя заявку я подтверждаю согласие с условиями Пользовательского соглашения
+                            </p>
+                        </label>
+                    </li>
+                </ul>
+
+                <div id="js-consent-modal" class="consent-modal-block">
+                    <p class="consent-modal-block__discription">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est amet quaerat rem mollitia fugiat reiciendis placeat iusto, blanditiis id officiis sequi modi laboriosam! Minus itaque numquam placeat corrupti accusamus velit!
+                    </p>
+
+                    <button value="yes" class="consent-modal-block__btn">
+                        Согласен
+                    </button>
+
+                    <button class="consent-modal-block__btn">
+                        Не согласен
+                    </button>
+                </div>
+
+                <p class="claim__unstarred">
+                    <span class="claim__label_spec">
+                        *
+                    </span>
+
+                    Поля, которые надо обязательно заполнить
+                </p>
+
+                <button type="submit" class="claim__btn">
+                    отправить
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="tel:88001234567" class="footer__link">
+                    8 (800) 123-45-67
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <a href="tel:88001234567" class="footer__link">
+                    8 (800) 123-45-67
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/all.js"></script>
+
+</body>
+</html>
+
+    
