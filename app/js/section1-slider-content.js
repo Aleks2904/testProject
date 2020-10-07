@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 const sliderContent = [
     {
-        img: '../img/approaching-tours/slaid1.webp',
+        img: 'img/approaching-tours/slaid1.webp',
         price: '118 112',
         country: 'Италия',
         title: 'Под небом Тосканы',
@@ -11,7 +11,7 @@ const sliderContent = [
         transportation: 'Авиаперелет включен!'
     },
     {
-        img: '../img/approaching-tours/slaid2.webp',
+        img: 'img/approaching-tours/slaid2.webp',
         price: '140 715',
         country: 'ИСЛАНДИЯ',
         title: 'Майские каникулы в Исландии',
@@ -20,7 +20,7 @@ const sliderContent = [
         transportation: false
     },
     {
-        img: '../img/approaching-tours/slaid3.webp',
+        img: 'img/approaching-tours/slaid3.webp',
         price: '37 302',
         country: 'ТУРЦИЯ',
         title: 'Под небом Тосканы',
@@ -29,7 +29,7 @@ const sliderContent = [
         transportation: 'Авиаперелет включен!'
     },
     {
-        img: '../img/approaching-tours/slaid4.webp',
+        img: 'img/approaching-tours/slaid4.webp',
         price: '145 000',
         country: 'НОРВЕГИЯ, ШПИЦБЕРГЕН',
         title: 'Под небом Тосканы',
@@ -38,7 +38,7 @@ const sliderContent = [
         transportation: false
     },
     {
-        img: '../img/approaching-tours/slide5-8.webp',
+        img: 'img/approaching-tours/slide5-8.webp',
         price: '118 112',
         country: 'Италия',
         title: 'Под небом Тосканы',
@@ -47,7 +47,7 @@ const sliderContent = [
         transportation: 'Авиаперелет включен!'
     },
     {
-        img: '../img/approaching-tours/slide5-8.webp',
+        img: 'img/approaching-tours/slide5-8.webp',
         price: '140 715',
         country: 'ИСЛАНДИЯ',
         title: 'Майские каникулы в Исландии',
@@ -56,7 +56,7 @@ const sliderContent = [
         transportation: false
     },
     {
-        img: '../img/approaching-tours/slide5-8.webp',
+        img: 'img/approaching-tours/slide5-8.webp',
         price: '37 302',
         country: 'ТУРЦИЯ',
         title: 'Под небом Тосканы',
@@ -65,7 +65,7 @@ const sliderContent = [
         transportation: 'Авиаперелет включен!'
     },
     {
-        img: '../img/approaching-tours/slide5-8.webp',
+        img: 'img/approaching-tours/slide5-8.webp',
         price: '145 000',
         country: 'НОРВЕГИЯ, ШПИЦБЕРГЕН',
         title: 'Под небом Тосканы',
@@ -74,7 +74,7 @@ const sliderContent = [
         transportation: false
     },
     {
-        img: '../img/approaching-tours/slide9-12.webp',
+        img: 'img/approaching-tours/slide9-12.webp',
         price: '118 112',
         country: 'Италия',
         title: 'Под небом Тосканы',
@@ -83,7 +83,7 @@ const sliderContent = [
         transportation: 'Авиаперелет включен!'
     },
     {
-        img: '../img/approaching-tours/slide9-12.webp',
+        img: 'img/approaching-tours/slide9-12.webp',
         price: '140 715',
         country: 'ИСЛАНДИЯ',
         title: 'Майские каникулы в Исландии',
@@ -92,7 +92,7 @@ const sliderContent = [
         transportation: false
     },
     {
-        img: '../img/approaching-tours/slide9-12.webp',
+        img: 'img/approaching-tours/slide9-12.webp',
         price: '37 302',
         country: 'ТУРЦИЯ',
         title: 'Под небом Тосканы',
@@ -101,7 +101,7 @@ const sliderContent = [
         transportation: 'Авиаперелет включен!'
     },
     {
-        img: '../img/approaching-tours/slide9-12.webp',
+        img: 'img/approaching-tours/slide9-12.webp',
         price: '145 000',
         country: 'НОРВЕГИЯ, ШПИЦБЕРГЕН',
         title: 'Под небом Тосканы',
