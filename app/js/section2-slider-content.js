@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     function slider(slide){
         const returnShablon = `
-            <div class="popular-slider__item">
+            <li class="popular-slider__item">
                 <div class="popular-slider__img-block">
                     <img  class="popular-slider__img" src="${slide.img}" alt="${slide.title}">
     
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 <h3 class="popular-slider__title">
                     ${slide.title}
                 </h3>
-            </div>
+            </li>
         `;
 
         return returnShablon;

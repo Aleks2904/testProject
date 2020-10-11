@@ -110,13 +110,14 @@ $(document).ready(function() {
                     });
 
                     if(array[i].vertical == false){
-                        const   slToShow = array[i].slidesToShow, //сколько показываем
-                                slToRow = array[i].slidesToRow,
-                                gapСl = array[i].gapСolumn,
-                                gapRw = array[i].gapRow,
+                        const   slToShow = array[i].slidesToShow, //сколько показываем в строку
+                                slToRow = array[i].slidesToRow, //сколько показывает в колонку
+                                gapСl = array[i].gapСolumn, //растояние в строке
+                                gapRw = array[i].gapRow,    //растояние в колонке
                                 startEl = array[i].start,  //начальный элемент
                                 sumEl = allInfo.length,     //колиечество всех элементов
                                 wStartEl = allInfo[startEl].w, //ширина стартового элемента
+                                hStartEl = allInfo[startEl].h,
                                 whConteiner = (wStartEl * slToShow) + ((gapСl * slToShow)-gapСl), //ширина контейнера для показа
                                 resultS = sumEl / slToRow; //количество строк
 
@@ -127,10 +128,12 @@ $(document).ready(function() {
                         };
 
                         const allWhInStartEl = wInStartEl + (gapСl * startEl); //ширина всех элементов с гэпом до старотового
-
-
                     
-                        this.track.css('grid-template-columns', `repeat(${resultS},1fr)`); //количество столбцов
+                        this.track.css('grid-template-columns', `repeat(${resultS}, 1fr)`); //количество столбцов
+                        this.track.css('grid-template-rows', `repeat(${slToRow}, 1fr)`);
+                        this.track.css('grid-auto-flow', 'column');
+                        this.track.css('grid-auto-rows', 'auto');
+
                         this.track.css('grid-column-gap', `${gapСl}px`); //растояние в строке ( в длину )
                         this.track.css('grid-row-gap', `${gapRw}px`);    //растояние между строками (в высоту)
                         this.conteiner.css('width', `${whConteiner}px`); //ширина контейнера для показа
@@ -294,10 +297,6 @@ $(document).ready(function() {
                             if(this.posit == result){
                                 this.btnNext.addClass('btnDisable');
                             }
-
-                            console.log('позиция ' +this.posit)
-                            console.log('ширина трека ' +allWidth)
-                            console.log('результ' +result)
                         }
                     }else{
                         this.btnPrev.removeClass('btnDisable');

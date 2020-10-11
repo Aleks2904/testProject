@@ -114,7 +114,7 @@ const sliderContent = [
 
 function slider(slide){
     const returnShablon = `
-        <div class="AT-slider__item slider-wraper__item">
+        <li class="AT-slider__item slider-wraper__item">
             <div class="AT-slider__img-block">
                 <img  class="AT-slider__img" src="${slide.img}" alt="${slide.title}">
 
@@ -138,11 +138,11 @@ function slider(slide){
             <p class="AT-slider__arrival-time">
                 ${slide.arrivalTime}
             </p>
-        </div>
+        </li>
     `
 
     const returnShablon2 = `
-        <div class="AT-slider__item slider-wraper__item">
+        <li class="AT-slider__item slider-wraper__item">
             <div class="AT-slider__img-block">
                 <img  class="AT-slider__img" src="${slide.img}" alt="${slide.title}">
 
@@ -170,7 +170,7 @@ function slider(slide){
             <span class="AT-slider__transportation">
                 ${slide.transportation}
             </span>
-        </div>
+        </li>
     `
 
     if(slide.transportation == false){

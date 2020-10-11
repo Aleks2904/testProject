@@ -129,6 +129,8 @@
     }
 }
 
+//слайдер
+
 .AT-slider {
     position: relative;
     margin: 0 auto;
@@ -389,3 +391,20 @@
     }
 }
 
+//классыы для фильтра слайдера
+
+.spain{
+    order: -1;
+}
+
+.italy{
+    order: -2;
+}
+
+.iceland{
+    order: -3;
+}
+
+.turkey{
+    order: -4;
+}
