@@ -153,6 +153,8 @@
         height: 100%;
         object-fit: cover;
 
+        user-select: none;
+
         @media (min-width:768px){
             max-height: 180px;
         }
