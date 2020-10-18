@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         menuBlock.classList.add('activ-modal');
         body.style.overflow = 'hidden';
         body.classList.add('obfuscation');
+        menuOpenBtn.setAttribute('aria-expanded', 'true');
 
     });
 
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         menuBlock.classList.remove('activ-modal')
         body.style.overflow = 'auto';
         body.classList.remove('obfuscation');
+        menuOpenBtn.setAttribute('aria-expanded', 'false');
     })
 
     body.addEventListener('click', function(e){
